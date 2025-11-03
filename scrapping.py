@@ -10,7 +10,7 @@ import os
 # -----------------------------
 # 크롬 드라이버 설정
 # -----------------------------
-driver_path = "C:/Users/USER/Downloads/chromedriver-win64/chromedriver.exe"
+driver_path = "C:/Users/USER/Downloads/chromedriver-win64/chromedriver.exe" #이 부분 수정
 
 service = Service(driver_path)
 driver = webdriver.Chrome(service=service)
@@ -137,4 +137,5 @@ except Exception as e:
 # 종료
 # -----------------------------
 driver.quit()
+
 print("[INFO] 크롬 드라이버 종료")
